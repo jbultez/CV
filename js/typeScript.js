@@ -1,10 +1,11 @@
 // this script is used to type on the header bg
 $('#moving-text').typeIt({
-     speed: 150,
+     speed: 210,
      breakLines: false,
-     autoStart: false})
+     autoStart: false,
+     loop: true})
      .tiType('Développeur ROR.')
-     .tiPause(500)
+     .tiPause(2000)
      .tiDelete(4)
      .tiType('Ruby On Rails. ')
-     .tiPause(1000);
+     .tiPause(3000);

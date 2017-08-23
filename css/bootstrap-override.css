@@ -1,6 +1,54 @@
 body, html{
   height: 100%;
 }
+.brand-color {
+  color: #d61919;
+}
+.custom-navbar {
+  border: none;
+  margin-bottom: 0;
+  background-color: transparent;
+  padding: 5px 0px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.scroll {
+  background-color: black !important;
+}
+.custom-navbar .navbar-brand {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 30px;
+
+}
+.custom-navbar .nav li a {
+  font-size: 1em;
+  color: white;
+  line-height: 40px;
+  padding-right: 0 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.custom-navbar .navbar-nav > li > a:hover,
+.custom-navbar .navbar-nav > li > a:focus,
+.custom-navbar .navbar-nav > li > a.active {
+  background-color: transparent;
+  color: #d61919;
+}
+.custom-navbar .navbar-toggle {
+  border: none;
+  padding-top: 10px;
+}
+.custom-navbar .navbar-toggle {
+  background-color: transparent;
+}
+.custom-navbar .navbar-toggle .icon-bar {
+  background: #d61919;
+  border-color: transparent;
+}
+
 .header-bg {
     background-image: url("../images/background-image.jpg");
     height: 100%;
@@ -17,7 +65,7 @@ body, html{
     height: 100%;
 }
 .name{
-  margin-top: 30%;
+  margin-top: 50%;
   color: white;
   text-align: center;
   font-size: 45px;
