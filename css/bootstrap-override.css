@@ -75,3 +75,93 @@ body, html{
   text-align: center;
   font-size: 25px;
 }
+#about, #experiences{
+  background-color: #f9fafc;
+}
+.underline-style{
+  width: 6%;
+  border-top: 2px solid black;
+}
+.no-margin-top{
+  margin-top: 0;
+}
+.resize-title{
+  font-size: 35px;
+}
+.about-text {
+  text-align: justify;
+  line-height: 25px;
+  font-size: 17px;
+  color: #757c87;
+}
+.social-icons {
+  margin-top: 8.5%;
+  margin-bottom: 2%;
+}
+.icon {
+  color: black;
+  padding-right: 1%;
+}
+.icon:focus, .icon:hover{
+  color: #d61919 !important;
+}
+.btn, .btn-primary{
+  background-color: #d61919 !important;
+  border-color: #d61919 !important;
+  padding: 12px 20px !important;
+  margin-top: 15%;
+}
+
+/*Skill section*/
+
+#skills, #formation{
+  background-color: white;
+}
+.skill-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #111;
+  border-radius: 5px;
+}
+.skill-bar-overlay {
+  height: 8px;
+  background-color: #d61919;
+  width: 20%;
+}
+.single-skill {
+  position: relative;
+  margin-bottom: 60px;
+}
+.single-skill p {
+  font-size: 16px;
+  color: #322C2C;
+  font-weight: 500;
+}
+.single-skill span {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  font-size: 16px;
+  color: #322C2C;
+  font-weight: 500;
+  opacity: 0;
+}
+.single-skill span.show {
+  text-align: right;
+  opacity: 1;
+}
+.div-exp{
+  background-color: white;
+  box-shadow: 10px 10px 5px #c4c4c4;
+}
+.p-exp{
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    color: #757c87;
+}
+.p-date{
+  text-align: center;
+  text-decoration: underline;
+  color: #d61919;
+}

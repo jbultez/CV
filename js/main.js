@@ -1,3 +1,4 @@
+$(function(){
 // change the class of the navbar to change the background color when scrolling on website
 $(window).on("scroll", function () {
     if ($(window).scrollTop() > 130) {
@@ -28,4 +29,27 @@ $(window).on("scroll", function () {
         currLink.removeClass("active");
       }
     });
-  }
+  };
+
+  //Progress Bar
+  var startSkills = $('.single-skill');
+  startSkills.waypoint(function () {
+      startSkills.each(function () {
+          var data = $(this).data('percent');
+          $(this).find('.skill-bar-overlay').animate({
+              width: data + "%"
+          }, 2000);
+
+          $(this).find('span').addClass('show').animate({
+              width: data + (-20) + "%"
+          }, 2000);
+      });
+  }, {
+      triggerOnce: true,
+      offset: 'bottom-in-view'
+  });
+
+
+
+
+});
