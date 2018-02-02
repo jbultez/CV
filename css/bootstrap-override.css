@@ -75,7 +75,7 @@ body, html{
   text-align: center;
   font-size: 25px;
 }
-#about, #experiences{
+#about, #experiences, #projects{
   background-color: #f9fafc;
 }
 .underline-style{
@@ -114,7 +114,7 @@ body, html{
 
 /*Skill section*/
 
-#skills, #formation{
+#skills, #education{
   background-color: white;
 }
 .skill-bar {
@@ -160,8 +160,73 @@ body, html{
     font-size: 14px;
     color: #757c87;
 }
+.p-project{
+  line-height: 25px;
+  font-size: 14px;
+}
 .p-date{
   text-align: center;
   text-decoration: underline;
   color: #d61919;
+}
+.exp {
+  padding-left: 50px;
+  padding-top: 20px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.exp:after{
+  background: red;
+}
+.exp:after{
+  background: #cd5353;
+  border: 3px solid #ffffff;
+  content: "";
+  height: 15px;
+  left: 12px;
+  position: absolute;
+  text-align: center;
+  top: 24px;
+  width: 15px;
+}
+.timeline{
+  position: relative;
+}
+.timeline:before{
+  background: #ededed;
+  bottom: 0;
+  content: "";
+  left: 18px;
+  position: absolute;
+  top: 0;
+  width: 3px;
+  height: 100%;
+}
+@media (min-width:1200px) {
+  .timeline:before{
+    left: 310px;
+  }
+}
+@media (max-width:1200px) and (min-width:1000px) {
+  .timeline:before{
+    left: 261px;
+  }
+}
+@media (max-width:1000px) and (min-width:400px) {
+  .timeline:before{
+    left: 18px;
+  }
+}
+footer{
+  background-color: black;
+  height: 6%;
+}
+.footer-link{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-decoration: none;
+  color: white;
 }
